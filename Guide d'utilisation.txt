@@ -1,0 +1,33 @@
+# ===== 1. Start XAMPP
+- Start Apache
+- Start MySQL
+- Open phpMyAdmin
+- Import the database:
+database/detection_camera.sql
+
+
+
+# ===== 2. Start the Backend (Terminal 1)
+cd C:\Users\ismai\OneDrive\Desktop\Projets\AiCamDetect\backend
+mvn spring-boot:run
+
+
+
+# ===== 3. Start the AI Detection Service (Terminal 2)
+cd C:\Users\ismai\OneDrive\Desktop\Projets\AiCamDetect\frontend\model
+venv\Scripts\activate
+python app6.9.py
+
+
+
+# ===== 4. Start the Frontend (Terminal 3)
+cd C:\Users\ismai\OneDrive\Desktop\Projets\AiCamDetect\frontend
+npm install
+npm start
+
+
+
+# ===== 5. Access the Application
++ URL      : http://localhost:4200
++ Username : admin
++ Password : admin123
